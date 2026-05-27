@@ -16,7 +16,7 @@
 
         <!-- Menu de navegaçao-->
         <div class="centralizado" id="menu_bar">
-            <div> <a href="#intro"> Home </a> </div>
+            <div> <a href="#home"> Home </a> </div>
             <div> <a href="#aboutme"> Sobre Mim </a> </div>
             <div> <a href="#project-portfolio"> Projetos </a> </div>
             <div> <a href="#contatos-box"> Contato </a> </div>
@@ -24,133 +24,176 @@
         </div>
 
         <!-- Home -->
-        <div id="intro">
-            <!-- A camadas de sprites para formar o paralax-->
+        <section id="home" class="home-section">
+            <!-- Camadas de paralax para o fundo -->
             <div class="paralax-effect" id="layer1"></div>
             <div class="paralax-effect" id="layer2"></div>
             <div class="paralax-effect" id="layer3"></div>
             <div class="paralax-effect" id="layer4"></div>
             <div class="paralax-effect" id="layer5"></div>
-            
-            <!-- Content box -->
-            <div class="centralizado" id="intro-content">
-                <div class="profile-wrapper">
-                    <img src="/assets/Image/profileIcon.jpeg" alt="imagem de perfil" id="profileIcon">
-                </div>
-                <div class="text-wrapper">
-                <blockquote id="epigrafe">
-                    <p>
-                        "It will be found, in fact, that the ingenious are always fanciful, and the truly imaginative never otherwise than analytic. The true genius shudders at incompleteness — and usually prefers silence to saying something which is not everything it should be."
-                    </p>
-                    <footer>— Edgar Allan Poe, <cite>Eureka: A Prose Poem</cite></footer>
-                </blockquote>
-                </div>
-            </div>
 
-        </div>
+            <div class="home-content centralizado">
+                <div class="home-card">
+                    <div class="home-avatar">
+                        <img src="/assets/Image/profileIcon.jpeg" alt="Foto de perfil de Victor Ayres">
+                    </div>
+                    <div class="home-text">
+                        <p class="home-label">Olá, eu sou</p>
+                        <h1>Victor Ayres</h1>
+                        <p class="home-title">Engenheiro de Robôs | Desenvolvedor ROS 2 | Pesquisador em Robótica</p>
+                        <div class="home-specialties">
+                            <span>Robótica Móvel</span>
+                            <span>ROS 2</span>
+                            <span>Navegação Autônoma</span>
+                            <span>Visão Computacional</span>
+                            <span>Sistemas Embarcados</span>
+                            <span>Robôs Humanoides</span>
+                            <span>Projetos</span>
+                            <span>Artigos</span>
+                            <span>Currículo</span>
+                        </div>
+                        <div class="home-actions">
+                            <a href="#project-portfolio" class="button button-primary">Ver Projetos</a>
+                            <a href="/blog" class="button button-secondary">Ler Artigos</a>
+                            <a href="curriculo.html" class="button button-tertiary">Currículo</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#aboutme" class="scroll-down" aria-label="Ir para Sobre Mim">
+                    <span></span>
+                </a>
+            </div>
+        </section>
 
         <!-- Seçao: Sobre Min -->
-        <div class="coluna" id="aboutme">
-            <div id="foto-perfil">
-                <img src="assets/Image/profileIcon.jpeg" alt="Foto de perfil" />
-            </div>
-        
-            <div class="coluna" id="texto-sobre">
-                <h2>About me</h2>
-                <p>
-                    Use this bio section as your way of describing yourself and saying what you do...
-                </p>
-        
-                <div class="tabela-aboutme">
-                    <div class="linha">
-                        <div class="celula"><strong>📍 Location:</strong> Victoria, BC</div>
-                        <div class="celula"><strong>🌎 Nationality:</strong> Canadian / Irish</div>
+        <section id="aboutme" class="aboutme-section">
+            <div class="aboutme-top">
+                <div class="aboutme-profile-card">
+                    <div class="profile-card-image">
+                        <img src="assets/Image/profileIcon.jpeg" alt="Foto de perfil de Victor Ayres" />
                     </div>
-                    <div class="linha">
-                        <div class="celula"><strong>🎓 Study:</strong> University of Victoria</div>
-                        <div class="celula"><strong>🎂 Age:</strong> 29</div>
+                    <div class="profile-card-info">
+                        <p class="profile-card-title">Perfil</p>
+                        <p class="profile-card-text">Engenheiro de Robôs com foco em robótica móvel, ROS 2, navegação autônoma, visão computacional, sistemas embarcados e robôs humanoides.</p>
+                        <div class="profile-card-links">
+                            <a href="#" class="link-pill">GitHub</a>
+                            <a href="#" class="link-pill">LinkedIn</a>
+                            <a href="#" class="link-pill">ResearchGate</a>
+                            <a href="#" class="link-pill">Lattes</a>
+                            <a href="mailto:victoroliveiraayres@gmail.com" class="link-pill">E-mail</a>
+                        </div>
+                        <div class="profile-card-details">
+                            <div class="detail-item">
+                                <strong>Localização</strong>
+                                <span>São Paulo, Brasil</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Formação</strong>
+                                <span>Engenharia de Robôs — FEI</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Idiomas</strong>
+                                <span>Inglês fluente, Alemão intermediário</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Interesses</strong>
+                                <span>Robótica móvel, humanoides, IA, jogos, desenvolvimento web e pesquisa</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="linha">
-                        <div class="celula"><strong>🏍️ Interests:</strong> Motorcycles, Muay Thai, Banjos</div>
-                        <div class="celula"><strong>💼 Employment:</strong> Instant Domains, inc.</div>
+                </div>
+
+                <div class="aboutme-summary-card">
+                    <span class="section-label">Sobre Mim</span>
+                    <h2>Sou Victor Ayres</h2>
+                    <p class="about-description">
+                        Sou Victor Ayres, engenheiro de robôs com foco em robótica móvel, ROS 2, navegação autônoma, visão computacional, sistemas embarcados e robôs humanoides. Tenho experiência com projetos acadêmicos e práticos envolvendo robôs de serviço industrial, SLAM, Nav2, integração de sensores, manipuladores robóticos e desenvolvimento de software para robótica. Também me interesso por inteligência artificial, aprendizado por demonstração, robótica cognitiva e sistemas autônomos.
+                    </p>
+                    <div class="poe-card">
+                        <p>“It will be found, in fact, that the ingenious are always fanciful, and the truly imaginative never otherwise than analytic.”</p>
+                        <cite>— Edgar Allan Poe</cite>
                     </div>
                 </div>
             </div>
 
-            <div  style="text-align: center;">
-                <h2> Minhas Formação </h2>
-                <P>Proficiente em Inglês - C2 </P>
-                <p>Proficiente em Alemão - B2 </p>
-                <p>Engenharia de Robôs - 2025 </p>
+            <div class="aboutme-bottom">
+                <div class="aboutme-bottom-header">
+                    <div>
+                        <span class="section-label">Skills</span>
+                        <h3>Competências técnicas</h3>
+                    </div>
+                </div>
+
+                <div class="skill-groups">
+                    <div class="skill-group">
+                        <h4>Linguagens</h4>
+                        <div class="skill-badges skill-badges-images">
+                            <div class="skill-img-badge"><img src="/assets/Image/C.png" alt="C"><span>C</span></div>
+                            <div class="skill-img-badge"><img src="/assets/Image/C++.png" alt="C++"><span>C++</span></div>
+                            <div class="skill-img-badge"><img src="/assets/Image/Csharp.png" alt="C#"><span>C#</span></div>
+                            <div class="skill-img-badge"><img src="/assets/Image/python.png" alt="Python"><span>Python</span></div>
+                            <div class="skill-img-badge"><img src="/assets/Image/java.png" alt="Java"><span>Java</span></div>
+                            <div class="skill-badge">VHDL</div>
+                            <div class="skill-badge">HTML</div>
+                            <div class="skill-badge">CSS</div>
+                            <div class="skill-badge">JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Robótica e ROS</h4>
+                        <div class="skill-badges">
+                            <span class="skill-badge">ROS 2</span>
+                            <span class="skill-badge">Nav2</span>
+                            <span class="skill-badge">SLAM</span>
+                            <span class="skill-badge">Gazebo</span>
+                            <span class="skill-badge">RViz</span>
+                            <span class="skill-badge">ROS 2 Control</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Visão Computacional</h4>
+                        <div class="skill-badges">
+                            <span class="skill-badge">OpenCV</span>
+                            <span class="skill-badge">MediaPipe</span>
+                            <span class="skill-badge">AprilTag</span>
+                            <span class="skill-badge">RealSense</span>
+                            <span class="skill-badge">ZED</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Sistemas Embarcados</h4>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Raspberry Pi</span>
+                            <span class="skill-badge">ESP32</span>
+                            <span class="skill-badge">STM32</span>
+                            <span class="skill-badge">Dynamixel</span>
+                            <span class="skill-badge">PCA9685</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Desenvolvimento</h4>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">Linux</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">C++</span>
+                            <span class="skill-badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Iframes temporariamente comentados para manter a seção limpa -->
+                <!--
+                <div class="aboutme-legacy">
+                    <h4>Instituição e projetos antigos</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tYARU4_ikmY?si=Aigxywmy3DWRbHxr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233764.1658691642!2d-46.7272006583351!3d-23.727220117113298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4158ef9c7c05%3A0x776b798985695f52!2sFEI%20-%20Campus%20S%C3%A3o%20Bernardo%20do%20Campo!5e0!3m2!1spt-BR!2sbr!4v1739231416018!5m2!1spt-BR!2sbr" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://scratch.mit.edu/projects/159649718/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+                -->
             </div>
-
-            <div style="text-align: center;">
-                <table border="2" style="margin: 0 auto;">
-                    <tr>
-                        <th>Categoria</th>
-                        <th>Línguas de Programação</th>
-                    </tr>
-                    <tr>
-                        <td>Proficiente</td>
-                        <td>
-                            <img src="/assets/Image/C.png" alt="imagem de C" width="50" height="50">
-                            <img src="/assets/Image/C++.png" alt="imagem de C++" width="50" height="50">
-                            <img src="/assets/Image/Csharp.png" alt="imagem de C#" width="50" height="50">
-                            <img src="/assets/Image/python.png" alt="imagem de python" width="50" height="50">
-                            <img src="/assets/Image/java.png" alt="imagem de java" width="50" height="50">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Intermediário</td>
-                        <td>
-                            <img src="/assets/Image/vhdl.png" alt="imagem de VHLD" width="50" height="50">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Próximos Aprendizados</td>
-                        <td>
-                            <img src="/assets/Image/html.png" alt="imagem de HTML" width="50" height="50">
-                            <img src="/assets/Image/CSS.png" alt="imagem de CSS" width="50" height="50">
-                            <img src="/assets/Image/JS.png" alt="imagem de JS" width="50" height="50">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <h2>Conheça um pouco sobre a instituição</h2>
-
-            <iframe 
-                width="560" height="315" 
-                src="https://www.youtube.com/embed/tYARU4_ikmY?si=Aigxywmy3DWRbHxr" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
-            <br>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233764.1658691642!2d-46.7272006583351!3d-23.727220117113298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4158ef9c7c05%3A0x776b798985695f52!2sFEI%20-%20Campus%20S%C3%A3o%20Bernardo%20do%20Campo!5e0!3m2!1spt-BR!2sbr!4v1739231416018!5m2!1spt-BR!2sbr" 
-                width="250" height="200" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <br>
-
-            <iframe 
-                src="https://scratch.mit.edu/projects/159649718/embed" 
-                allowtransparency="true" 
-                width="485" 
-                height="402" 
-                frameborder="0" 
-                scrolling="no" 
-                allowfullscreen>
-            </iframe>
-            <br>
-
-        </div>
+        </section>
 
         <!-- Portifolho  -->
         <section id="project-portfolio">
